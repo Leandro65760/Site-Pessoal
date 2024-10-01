@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <script>
         function toggleSection(sectionId) {
-            var section = document.getElementById(sectionId);
-            if (section.style.display === 'none') {
-                section.style.display = 'block';
-            } else {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
                 section.style.display = 'none';
-            }
+            });
+            document.getElementById(sectionId).style.display = 'block';
         }
     </script>
 </head>
@@ -29,7 +28,7 @@
         </nav>
     </header>
 
-    <section id="home" style="display: none;">
+    <section id="home">
         <h1>Bem-vindo ao site!</h1>
         <p>Este é o conteúdo da seção Home.</p>
     </section>
