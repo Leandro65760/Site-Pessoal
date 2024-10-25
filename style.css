@@ -57,6 +57,39 @@ h1, h2 {
     color: #ff6347;
     margin-bottom: 20px;
 }
+#contato {
+    display: block; /* Certifique-se de que a seção 'contato' esteja visível */
+}
+
+#contato h2 {
+    color: #ff6347;
+    margin-bottom: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #1f1f1f;
+    background-color: #ffffff;
+}
+
+.contact-form button {
+    background-color: #ff6347;
+    color: #ffffff;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #ffa07a;
+}
 
 p {
     line-height: 1.8;
